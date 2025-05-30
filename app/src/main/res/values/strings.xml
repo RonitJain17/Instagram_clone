@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Instagram_Clone</string>
+    <string name="app_name">Instagram</string>
     <string name="content_description_stories" formatted="true">%s story</string>
 </resources>

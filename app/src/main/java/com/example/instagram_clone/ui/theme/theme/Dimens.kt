@@ -1,4 +1,4 @@
-package com.example.instagram_clone.ui.theme
+package com.example.instagram_clone.ui.theme.theme
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp

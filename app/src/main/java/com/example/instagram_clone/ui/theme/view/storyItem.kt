@@ -1,4 +1,4 @@
-package com.example.instagram_clone.ui.theme
+package com.example.instagram_clone.ui.theme.view
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -23,7 +22,10 @@ import androidx.compose.ui.unit.dp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
 import com.example.instagram_clone.R
-import com.example.instagram_clone.data.Story
+import com.example.instagram_clone.data.model.Story
+import com.example.instagram_clone.data.repository.stories
+import com.example.instagram_clone.ui.theme.theme.spacingSmall
+import com.example.instagram_clone.ui.theme.theme.storyCircleColor
 
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
@@ -65,5 +67,5 @@ fun storyItem(story: Story){
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun storyPreview(){
-    storyItem(story = Story(userNickName="",userAvatar=""))
+    storyItem(story = stories[0])
 }

@@ -1,4 +1,4 @@
-package com.example.instagram_clone.ui.theme
+package com.example.instagram_clone.ui.theme.theme
 
 import android.app.Activity
 import android.os.Build
@@ -21,7 +21,8 @@ private val DarkColorScheme = darkColorScheme(
     secondary = PurpleGrey80,
     tertiary = Pink80,
     background = Color.Black,
-    onBackground = Color.White
+    onBackground = Color.White,
+    onSurface = darkDividerColor
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -29,7 +30,8 @@ private val LightColorScheme = lightColorScheme(
     secondary = PurpleGrey40,
     tertiary = Pink40,
     background = Color.White,
-    onBackground = Color.Black
+    onBackground = Color.Black,
+    onSurface = dividerColor
 )
 
 @Composable

@@ -1,4 +1,4 @@
-package com.example.instagram_clone.data
+package com.example.instagram_clone.data.model
 
 class Story(
     val userNickName :String,
