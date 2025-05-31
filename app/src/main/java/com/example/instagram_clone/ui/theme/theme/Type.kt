@@ -1,5 +1,6 @@
 package com.example.instagram_clone.ui.theme.theme
 
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.Typography
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
@@ -12,7 +13,7 @@ import com.example.instagram_clone.R
 val instagramFont = FontFamily(Font(R.font.billabong))
 
 // Set of Material typography styles to start with
-fun typography(onBackGround : Color) :Typography{
+fun typography(colorScheme: ColorScheme) :Typography{
     return Typography(
         bodyLarge = TextStyle(
             fontFamily = FontFamily.Default,
@@ -20,13 +21,13 @@ fun typography(onBackGround : Color) :Typography{
             fontSize = fontSmall,
             lineHeight = 24.sp,
             letterSpacing = 0.5.sp,
-            color = onBackGround
+            color = colorScheme.onBackground
         ),
         headlineLarge = TextStyle(
             fontFamily = instagramFont,
             fontWeight = FontWeight.Normal,
             fontSize = 32.sp,
-            color = onBackGround
+            color = colorScheme.onBackground
         )
     )
 }
